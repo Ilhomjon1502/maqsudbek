@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maqsudjon Turg'unaliyev</title>
+  <meta name="description" content="Maqsudjon Turg'unaliyev — Sarbon universiteti, Axborot texnologiyalari yo'nalishi talabasi.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%23111'/><text x='50' y='68' font-size='56' font-family='Arial' font-weight='700' text-anchor='middle' fill='%23fff'>M</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    // Mavzuni sahifa chizilishidan oldin o'rnatamiz (miltillash bo'lmasligi uchun)
+    (function () {
+      try {
+        var saved = localStorage.getItem('theme');
+        var dark = saved ? saved === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+        document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <div class="bg">
+    <span class="blob blob-1"></span>
+    <span class="blob blob-2"></span>
+    <span class="grid"></span>
+  </div>
+
+  <div class="progress" id="progress"></div>
+
+  <header class="header" id="header">
+    <div class="container header-inner">
+      <a href="#" class="logo">Maqsudjon<span>.</span></a>
+      <nav class="nav" id="nav">
+        <a href="#haqimda">Men haqimda</a>
+        <a href="#talim">Ta'lim</a>
+        <a href="#aloqa">Aloqa</a>
+      </nav>
+      <div class="header-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Kunduzgi / tungi rejim">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <a href="https://t.me/maqsudbek911" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Bog'lanish</a>
+        <button class="burger" id="burger" aria-label="Menyu"><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <span class="badge anim" style="--d:.1s"><i class="dot"></i> Sarbon universiteti · 1-kurs talabasi</span>
+          <h1 class="anim" style="--d:.2s">
+            Salom, men <span class="grad">Maqsudjon</span><br>
+            <span class="typed-line"><span class="typed" id="typed"></span><span class="caret">|</span></span>
+          </h1>
+          <p class="lead anim" style="--d:.35s">
+            Axborot texnologiyalari yo'nalishida tahsil olaman. Texnologiyalarni o'rganish,
+            yangi narsalar yaratish va doimiy rivojlanish — mening asosiy maqsadim.
+          </p>
+          <div class="hero-cta anim" style="--d:.5s">
+            <a href="#haqimda" class="btn btn-primary">Men haqimda
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+            </a>
+            <a href="tel:+998911110635" class="btn btn-ghost">+998 91 111 06 35</a>
+          </div>
+          <div class="socials anim" style="--d:.65s">
+            <a href="https://t.me/maqsudbek911" target="_blank" rel="noopener" aria-label="Telegram">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z"/></svg>
+            </a>
+            <a href="tel:+998911110635" aria-label="Telefon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-photo anim" style="--d:.3s">
+          <div class="photo-frame" id="tilt">
+            <img src="assets/maqsudjon.webp" alt="Maqsudjon Turg'unaliyev">
+            <div class="photo-caption">
+              <strong>Maqsudjon Turg'unaliyev</strong>
+              <span>IT talabasi</span>
+            </div>
+          </div>
+          <div class="float-card fc-1">
+            <b><span class="count" data-to="1">0</span>-kurs</b>
+            <span>Sarbon universiteti</span>
+          </div>
+          <div class="float-card fc-2">
+            <b><span class="count" id="ageCount" data-to="18">0</span> yosh</b>
+            <span>2008-yilda tug'ilgan</span>
+          </div>
+        </div>
+      </div>
+      <a href="#haqimda" class="scroll-hint" aria-label="Pastga"><span></span></a>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Axborot texnologiyalari</span><i>✦</i><span>Sarbon universiteti</span><i>✦</i><span>Farg'ona</span><i>✦</i><span>Qo'shtepa</span><i>✦</i><span>O'rganish</span><i>✦</i><span>Rivojlanish</span><i>✦</i>
+        <span>Axborot texnologiyalari</span><i>✦</i><span>Sarbon universiteti</span><i>✦</i><span>Farg'ona</span><i>✦</i><span>Qo'shtepa</span><i>✦</i><span>O'rganish</span><i>✦</i><span>Rivojlanish</span><i>✦</i>
+      </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section class="section" id="haqimda">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Men haqimda</span>
+          <h2>Bilimga chanqoq, <span class="grad">kelajakka</span> intiluvchan</h2>
+          <p>Har kuni yangi narsa o'rganish va o'z ustimda ishlash — men uchun eng muhim odat.</p>
+        </div>
+
+        <div class="cards">
+          <article class="card reveal" style="--d:0s">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            </div>
+            <h3>Shaxsiy ma'lumot</h3>
+            <p>Maqsudjon Turg'unaliyev. 2008-yilda tug'ilganman, hozir <b id="ageText">18</b> yoshdaman.</p>
+          </article>
+          <article class="card reveal" style="--d:.12s">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></svg>
+            </div>
+            <h3>Ta'lim</h3>
+            <p>Sarbon universiteti, Axborot texnologiyalari yo'nalishi, 1-kurs talabasi.</p>
+          </article>
+          <article class="card reveal" style="--d:.24s">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <h3>Manzil</h3>
+            <p>Farg'ona viloyati, Qo'shtepa tumani.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="section" id="talim">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Ta'lim</span>
+          <h2>Mening <span class="grad">yo'lim</span></h2>
+          <p>Axborot texnologiyalari olamidagi ilk qadamlar.</p>
+        </div>
+
+        <div class="timeline">
+          <div class="tl-item reveal">
+            <span class="tl-dot"></span>
+            <div class="tl-card">
+              <span class="tl-date">Hozir</span>
+              <h3>Sarbon universiteti</h3>
+              <p>Axborot texnologiyalari yo'nalishi — 1-kurs talabasi.</p>
+            </div>
+          </div>
+          <div class="tl-item reveal">
+            <span class="tl-dot"></span>
+            <div class="tl-card">
+              <span class="tl-date">Maqsad</span>
+              <h3>Malakali IT mutaxassis</h3>
+              <p>Bilimlarni chuqurlashtirish, amaliy loyihalar ustida ishlash va kasbda o'sish.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="stats reveal">
+          <div class="stat"><b class="count" data-to="2008">0</b><span>Tug'ilgan yil</span></div>
+          <div class="stat"><b><span class="count" data-to="1">0</span>-kurs</b><span>Universitet</span></div>
+          <div class="stat"><b>IT</b><span>Yo'nalish</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="aloqa">
+      <div class="container">
+        <div class="contact reveal">
+          <span class="eyebrow">Aloqa</span>
+          <h2>Keling, <span class="grad">bog'lanamiz</span></h2>
+          <p>Savol yoki taklif bo'lsa, bemalol yozing yoki qo'ng'iroq qiling.</p>
+
+          <div class="contact-list">
+            <a href="tel:+998911110635" class="contact-item">
+              <span class="ci-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+              <span class="ci-text"><small>Telefon</small>+998 91 111 06 35</span>
+              <span class="ci-arrow">→</span>
+            </a>
+            <a href="https://t.me/maqsudbek911" target="_blank" rel="noopener" class="contact-item">
+              <span class="ci-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z"/></svg></span>
+              <span class="ci-text"><small>Telegram</small>@maqsudbek911</span>
+              <span class="ci-arrow">→</span>
+            </a>
+            <div class="contact-item static">
+              <span class="ci-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+              <span class="ci-text"><small>Manzil</small>Farg'ona, Qo'shtepa tumani</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> Maqsudjon Turg'unaliyev</p>
+      <div class="footer-links">
+        <a href="https://t.me/maqsudbek911" target="_blank" rel="noopener">Telegram</a>
+        <a href="tel:+998911110635">Telefon</a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Yuqoriga">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
